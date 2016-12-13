@@ -5,6 +5,24 @@ package com.example.sm.problem2;
 public class Employee extends Person implements Payment{
 
     private int salary;
+    public void increase(){
+        if(salary==0){
+            salary+=10000;
+
+        }
+        else{
+            salary+=10000;
+        }
+    }
+    public void decrease(){
+        if(salary==0){
+            salary=0;
+
+        }
+        else{
+            salary-=10000;
+        }
+    }
 
     public Employee(String name, int age, int salary) {
         super(name, age);
